@@ -1,5 +1,7 @@
 # AI-Powered Mental Health Sentiment Analyzer
 
+**Repository:** [github.com/dakhila201105/MBTI_Personality_Checker](https://github.com/dakhila201105/MBTI_Personality_Checker)
+
 An end-to-end NLP demo that classifies short user text into **Stress**, **Anxiety**, **Depression**, or **Neutral**, returns a **confidence score**, and surfaces **rule-based supportive suggestions**. A **FastAPI** backend serves a **baseline** TF-IDF + scikit-learn pipeline (Logistic Regression and Naive Bayes trained in one script), with an **optional** Hugging Face **BERT** fine-tuning path for experimentation.
 
 > **Disclaimer:** This project is for education and prototyping only. It is **not** a medical or diagnostic tool. Always encourage users in crisis to contact qualified professionals or emergency services.
