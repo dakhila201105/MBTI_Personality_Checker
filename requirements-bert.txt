@@ -1,0 +1,8 @@
+# Optional advanced stack (BERT fine-tuning / inference)
+-r requirements.txt
+
+torch>=2.0.0
+transformers>=4.36.0
+datasets>=2.16.0
+accelerate>=0.25.0
+safetensors>=0.4.0

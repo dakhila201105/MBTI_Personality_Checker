@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.venv/
+venv/
+env/
+.env
+
+# Models & outputs (regenerate with scripts/train.py)
+models/*.pkl
+models/bert/
+*.joblib
+
+# Logs
+logs/
+*.log
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# NLTK / spaCy caches (optional)
+nltk_data/
+
+# Jupyter
+.ipynb_checkpoints/

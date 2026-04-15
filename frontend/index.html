@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mental Health Sentiment Analyzer</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="hero">
+        <h1>AI-Powered Mental Health Sentiment Analyzer</h1>
+        <p class="subtitle">
+          Enter a short message. The model estimates emotional tone (Stress, Anxiety,
+          Depression, Neutral) with a confidence score and supportive suggestions.
+        </p>
+        <p class="disclaimer">
+          This demo is not medical advice. If you are in crisis, contact local emergency
+          services or a mental health professional.
+        </p>
+      </header>
+
+      <main class="card">
+        <label for="input-text">Your text</label>
+        <textarea
+          id="input-text"
+          rows="6"
+          placeholder="Describe how you feel in a few sentences..."
+        ></textarea>
+
+        <div class="actions">
+          <button type="button" id="analyze-btn">Analyze</button>
+          <span id="status" class="status" aria-live="polite"></span>
+        </div>
+
+        <section id="results" class="results hidden" aria-live="polite">
+          <h2>Result</h2>
+          <dl class="result-grid">
+            <dt>Emotion</dt>
+            <dd id="out-emotion">—</dd>
+            <dt>Confidence</dt>
+            <dd id="out-confidence">—</dd>
+            <dt>Suggestion</dt>
+            <dd id="out-suggestion" class="suggestion">—</dd>
+          </dl>
+          <div id="out-tips" class="tips"></div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <span>FastAPI + scikit-learn baseline · optional BERT via <code>USE_BERT</code></span>
+      </footer>
+    </div>
+    <script src="/static/app.js"></script>
+  </body>
+</html>
